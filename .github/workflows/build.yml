@@ -23,6 +23,11 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 22.13.0
+
+      # Enable Corepack (comes with Node 16.9+)
+      - name: Enable Corepack
+        run: corepack enable
+
       - name: install
         run: yarn install
       - name: ESLint
