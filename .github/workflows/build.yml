@@ -34,3 +34,5 @@ jobs:
         run: yarn run lint .
       - name: Prettier
         run: yarn format .
+      - name: build app
+        run: yarn build .
