@@ -31,6 +31,6 @@ jobs:
       - name: install
         run: yarn install
       - name: ESLint
-        run: yarn run fix .
+        run: yarn run lint:fix .
       - name: Prettier
-        run: yarn prettier --write .
+        run: yarn format:fix .
